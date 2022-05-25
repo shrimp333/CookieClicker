@@ -1,5 +1,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    margin: 0;
 }
 button {
     margin: 0;
@@ -7,4 +9,22 @@ button {
     border: none;
     background: transparent;
     font-size: 10rem;
+}
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    transform: scale(.95);
+    transition: all 150ms ease;
+}
+.center{
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.counter{
+    padding: 1rem;
+    background:rgb(46, 46, 103);
+    width: 100%;
+    margin: 0;
 }
