@@ -2,29 +2,56 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color:white;
     margin: 0;
+    background: rgb(255, 255, 255);
 }
-button {
+.cookie {
     margin: 0;
     padding: 0;
     border: none;
     background: transparent;
-    font-size: 10rem;
+    font-size: 12rem;
+    margin-bottom: 10px;
 }
-button:hover{
+.cookie:hover{
     cursor: pointer;
+    transform: scale(1.05);
+    transition: all 150ms ease;
 }
-button:active{
+.cookie:active{
     transform: scale(.95);
     transition: all 150ms ease;
 }
+.purchase{
+    margin: 0;
+    padding: 1rem;
+    border: none;
+    background: #6767a0;
+    color:white;
+    width: 20vw;
+}
+.purchase:hover{
+    cursor: pointer;
+    background: #4b4b79;
+    transition: all 150ms ease;
+}
 .center{
+    width: 60vw;
     display: grid;
     place-items: center;
     text-align: center;
 }
 .counter{
     padding: 1rem;
-    background:rgb(46, 46, 103);
-    width: 100%;
+    background:#2e2e67;
     margin: 0;
+}
+.flex{
+    display: flex;
+}
+.sideBar{
+    width: 20vw;
+    text-align: right;
+}
+.textCenter{
+    text-align: center;
 }

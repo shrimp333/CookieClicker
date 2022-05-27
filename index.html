@@ -10,10 +10,19 @@
 </head>
 
 <body>
-    <div class="center">
-        <h1 id="counter" class="counter">0</h1>
-        <h1 id="passiveCounter" class="counter">Clicks per sec: 0</h1>
-        <button id="main-button" onclick="clickButton()">🍪</button>
+    <header class="textCenter">
+        <h1 id="counter" class="counter">0 Cookies</h1>
+        <h2 id="passiveCounter" class="counter">per sec: 0</h2>
+    </header>
+    <div class="flex">
+        <div class="sideBar"></div>
+        <div class="center">
+            <button class="cookie" onclick="clickButton()">🍪</button>
+        </div>
+        <div class="sideBar">
+            <button id="autoClicker" class="purchase" onclick="buyAutoClicker()">Buy AutoClicker 🍪100</button>
+            <button id="factory" class="purchase" onclick="buyFactory()">Buy Factory 🍪1000</button>
+        </div>
     </div>
     <script src="./script.js"></script>
 </body>
