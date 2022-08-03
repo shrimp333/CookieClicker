@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Cookie Clicker</title>
 </head>
 
 <body>
     <header class="textCenter">
         <h1 id="counter" class="counter">0 Cookies</h1>
         <h2 id="passiveCounter" class="counter">per sec: 0</h2>
+        <button class="save" onclick="saveCookies()">Save</button>
     </header>
     <div class="flex">
-        <div class="sideBar"></div>
+        <div class="sideBar textLeft">
+            <div class="stats">
+                <h3>Stats</h3>
+                <p id="statClicks">Clicks: 0</p>
+                <p id="totalCookies">Total Cookies: 0</p>
+            </div>
+        </div>
         <div class="center">
             <button class="cookie" onclick="clickButton()">🍪</button>
         </div>
